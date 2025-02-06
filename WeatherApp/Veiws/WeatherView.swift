@@ -43,7 +43,7 @@ struct WeatherView: View {
                         HStack {
                             HStack {
                                 if let weather = viewModel.selectedWeather {
-                                    Text(viewModel.convertTemperature(weather.main.feels_like))
+                                    Text(viewModel.convertTemperature(weather.main.temp))
                                         .font(.system(size: 100, weight: .bold))
                                         .minimumScaleFactor(0.5)
                                         .lineLimit(1)
